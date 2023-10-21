@@ -1,5 +1,23 @@
 # create-astro
 
+## 4.3.0
+
+### Minor Changes
+
+- [#8846](https://github.com/withastro/astro/pull/8846) [`3baab3d93`](https://github.com/withastro/astro/commit/3baab3d93b8d16517cb089b0fa2c4028f21e780f) Thanks [@ElianCodes](https://github.com/ElianCodes)! - feat: make Houston wear scary hats and say new things for spooky season
+
+## 4.2.1
+
+### Patch Changes
+
+- [#8634](https://github.com/withastro/astro/pull/8634) [`b64dd45c0`](https://github.com/withastro/astro/commit/b64dd45c0d641f9f2ed997e2cbdf8a6b0193195f) Thanks [@TheOtterlord](https://github.com/TheOtterlord)! - Fix `--yes` behaviour to prevent it overriding `--template`
+
+## 4.2.0
+
+### Minor Changes
+
+- [#8551](https://github.com/withastro/astro/pull/8551) [`1d5b3f079`](https://github.com/withastro/astro/commit/1d5b3f079d0b4aa5a5c46f97b8b724ab88497fbe) Thanks [@jacobthesheep](https://github.com/jacobthesheep)! - Adds `--yes` and `dry-run` flags to project-name and the `yes` flag to template.
+
 ## 4.1.0
 
 ### Minor Changes
