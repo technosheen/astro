@@ -20,6 +20,14 @@ const projects = (await getCollection('work'))
 	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 	.slice(0, 4);
 
+const testimonials = [
+  { name: 'Gage McCall', description: 'Gage McCall description text.' },
+  { name: 'Matthieu Malardé', description: 'Matthieu Malardé description text.' },
+  { name: 'Rudley Dorce', description: 'Rudley Dorce description text.' },
+  { name: 'Brad Boggess', description: 'Brad Boggess description text.' },
+  { name: 'Heather Freiser', description: 'Heather Freiser description text.' }
+];
+
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
@@ -70,28 +78,6 @@ const projects = (await getCollection('work'))
 						View All
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
-				</div>
-			</section>
-
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
 				</div>
 			</section>
 		</main>
@@ -226,6 +212,7 @@ const projects = (await getCollection('work'))
 
 	.mention-card {
 		display: flex;
+		flex-direction: column;
 		height: 7rem;
 		justify-content: center;
 		align-items: center;
